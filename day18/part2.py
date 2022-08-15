@@ -20,7 +20,7 @@ def get_neighbors(i, grid):
 
 
 def print_grid(grid):
-    print("\x31[H\x31[J", end="")
+    print("\x1b[H\x1b[J", end="")
     for i, c in enumerate(grid):
         print(c, end="")
         if i % 100 == 99:
